@@ -25,7 +25,7 @@
     </div>
 
   <div class="m-add-todo">
-    <input type="text"  class="input-content" v-model="content" />
+    <input type="text"  class="input-content" v-model="content" placeholder="今天要开发的功能" />
     <button type="button" class="confirm" v-on:click="addTodo()"> 提交</button>
   </div>
   </div>
@@ -46,9 +46,7 @@ export default {
       msg: '今天记得吃饭，喝水',
       content:'',
       todoList:[
-          {content:'今天开发',status:'wait',checkbox:false},
-          {content:'更新通知列表开发',status:'wait',checkbox:false,},
-          {content:'更新通知弹窗开发',status:'done',checkbox:false,},
+          {content:'今天要开发新功能',status:'wait',checkbox:false},
       ],
       form:{
 
@@ -144,12 +142,11 @@ h3 {
     flex:1;
     border:1px solid #ddd;
     padding-left:10px;
-    font-size:18px;
+    font-size:16px;
 }
 
 input[type=text]:focus{
     outline:none;
-    border-color:green;
 }
 
 .confirm {
