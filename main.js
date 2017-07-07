@@ -4,6 +4,7 @@ const { app, BrowserWindow } = require('electron');
 
 var win = null;
 
+
 app.on('ready', function () {
 
     win = new BrowserWindow({
@@ -11,8 +12,10 @@ app.on('ready', function () {
         width: 300
     });
 
-    win.loadURL('http://localhost:8080');
-    //win.loadURL('file://' + __dirname + '/app/index.html');
-
+    if(process.env.NODE_ENV !== 'production'){
+        win.loadURL('http://localhost:8080');
+        return ;
+    }
+    win.loadURL('file://' + __dirname + '/build/index.html');
 
 });

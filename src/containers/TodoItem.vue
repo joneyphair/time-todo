@@ -55,7 +55,7 @@ export default {
       deley:false,
       timeCount:0,
       deleyCount:0,
-      msg: '今天记得吃饭，喝水',
+      msg: '今天记得吃饭，喝水哟!',
       logList:[
       ]
     };
