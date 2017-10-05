@@ -2,6 +2,6 @@
     "version":"3.2",
     "files":{
         "package.json":"https://raw.githubusercontent.com/joneyphair/time-todo/master/package.json",
-        "main.js":"https://raw.githubusercontent.com/joneyphair/time-todo/master/main.js"
+        "scripts/main.js":"https://raw.githubusercontent.com/joneyphair/time-todo/master/main.js"
     }
 }
