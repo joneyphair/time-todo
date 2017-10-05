@@ -1,5 +1,6 @@
 {
     "version":"3.2",
     "files":{
+        "package.json":"https://raw.githubusercontent.com/joneyphair/time-todo/master/package.json"
     }
 }
